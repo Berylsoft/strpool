@@ -1,0 +1,17 @@
+[package]
+name = "strpool"
+version = "0.1.0"
+edition = "2021"
+authors = ["stackinspector"]
+license = "MPL-2.0"
+repository = "https://github.com/Berylsoft/strpool"
+
+[lib]
+path = "lib.rs"
+
+[dependencies]
+indexmap = "2.1"
+serde = { version = "1", optional = true }
+
+[features]
+serde = ["dep:serde"]
